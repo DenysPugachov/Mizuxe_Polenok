@@ -11,16 +11,27 @@ body {
     background: #fff;
     height: 60px;
 
+    .fop {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 30px;
+        }
+    }
+
+    .tel {
+        color: black;
+        font-size: 1.2rem;
+        line-height: normal;
+    }
+
     .nav-item {
         font-size: 1.2rem;
         // padding-right: 1rem;
     }
-
-    i {
-        font-size: 1.5rem;
-    }
-
 }
+
 
 #showcase {
     position: relative;
@@ -77,14 +88,14 @@ body {
 
         h2 {
             font-size: 1.5em;
-            padding-top: 5px;
+            // padding-top: 5px;
         }
 
-        h4,
-        i {
-            font-size: 1.3rem;
-            padding-right: 2px;
-        }
+        // h4,
+        // i {
+        //     font-size: 1.3rem;
+        //     padding-right: 2px;
+        // }
     }
 }
 
@@ -124,40 +135,38 @@ body {
                 margin-left: 5px;
             }
 
-            h2 {
-                font-size: 1.5em;
-                padding-top: 5px;
+            .city {
+                top: 18px;
             }
 
-            h4,
-            i {
-                font-size: 1.3rem;
-                padding-right: 2px;
+            i, .tel {
+                font-size: 0.95rem;
             }
         }
-    }
 
-    .navbar-toggler {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: none;
-        opacity: 0.9;
-    }
-
-    #navbarCollapse {
-        background: #fff;
-        font-size: 1.2rem;
-        // border-radius: 0 0 0.5rem;
-        padding: 1rem;
-
-        a:hover {
-            color: $primary;
-            font-weight: bold;
-
-        }
     }
 }
+
+.navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    opacity: 0.9;
+}
+
+#navbarCollapse {
+    background: #fff;
+    font-size: 1.2rem;
+    // border-radius: 0 0 0.5rem;
+    padding: 1rem;
+
+    a:hover {
+        color: $primary;
+        font-weight: bold;
+    }
+}
+
 
 
 @media(max-width: 550px) {}

@@ -6,10 +6,17 @@ body {
   opacity: 0.9;
   background: #fff;
   height: 60px; }
+  .navbar .fop {
+    position: relative; }
+    .navbar .fop span {
+      position: absolute;
+      top: 30px; }
+  .navbar .tel {
+    color: black;
+    font-size: 1.2rem;
+    line-height: normal; }
   .navbar .nav-item {
     font-size: 1.2rem; }
-  .navbar i {
-    font-size: 1.5rem; }
 
 #showcase {
   position: relative;
@@ -46,12 +53,7 @@ body {
     height: 30px;
     margin-left: 5px; }
   #logo h2 {
-    font-size: 1.5em;
-    padding-top: 5px; }
-  #logo h4,
-  #logo i {
-    font-size: 1.3rem;
-    padding-right: 2px; } }
+    font-size: 1.5em; } }
 @media (max-width: 850px) {
   .navbar .nav-item {
     font-size: 1rem; } }
@@ -73,25 +75,21 @@ body {
     .navbar #logo img {
       height: 30px;
       margin-left: 5px; }
-    .navbar #logo h2 {
-      font-size: 1.5em;
-      padding-top: 5px; }
-    .navbar #logo h4,
-    .navbar #logo i {
-      font-size: 1.3rem;
-      padding-right: 2px; }
+    .navbar #logo .city {
+      top: 18px; }
+    .navbar #logo i, .navbar #logo .tel {
+      font-size: 0.95rem; } }
+.navbar-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  opacity: 0.9; }
 
-  .navbar-toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    opacity: 0.9; }
-
-  #navbarCollapse {
-    background: #fff;
-    font-size: 1.2rem;
-    padding: 1rem; }
-    #navbarCollapse a:hover {
-      color: #3292a6;
-      font-weight: bold; } }
+#navbarCollapse {
+  background: #fff;
+  font-size: 1.2rem;
+  padding: 1rem; }
+  #navbarCollapse a:hover {
+    color: #3292a6;
+    font-weight: bold; }
