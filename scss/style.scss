@@ -11,20 +11,6 @@ body {
     background: #fff;
     height: 60px;
 
-    .fop {
-        position: relative;
-
-        span {
-            position: absolute;
-            top: 30px;
-        }
-    }
-
-    .tel {
-        color: black;
-        font-size: 1.2rem;
-        line-height: normal;
-    }
 
     .nav-item {
         font-size: 1.2rem;
@@ -36,6 +22,21 @@ body {
         }
     }
 
+}
+
+.fop {
+    position: relative;
+
+    .city {
+        position: absolute;
+        top: 22px;
+    }
+}
+
+.tel {
+    color: black;
+    font-size: 1.2rem;
+    line-height: normal;
 }
 
 
@@ -77,9 +78,6 @@ body {
 }
 
 
-
-
-
 @media(max-width: 992px) {
     #main-nav .container {
         padding: 0;
@@ -96,12 +94,6 @@ body {
             font-size: 1.5em;
             // padding-top: 5px;
         }
-
-        // h4,
-        // i {
-        //     font-size: 1.3rem;
-        //     padding-right: 2px;
-        // }
     }
 }
 

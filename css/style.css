@@ -6,21 +6,23 @@ body {
   opacity: 0.9;
   background: #fff;
   height: 60px; }
-  .navbar .fop {
-    position: relative; }
-    .navbar .fop span {
-      position: absolute;
-      top: 30px; }
-  .navbar .tel {
-    color: black;
-    font-size: 1.2rem;
-    line-height: normal; }
   .navbar .nav-item {
     font-size: 1.2rem;
     padding-right: 1rem; }
     .navbar .nav-item .nav-link:hover {
       color: #3292a6;
       text-shadow: 1px 0px 0px #3292a6; }
+
+.fop {
+  position: relative; }
+  .fop .city {
+    position: absolute;
+    top: 22px; }
+
+.tel {
+  color: black;
+  font-size: 1.2rem;
+  line-height: normal; }
 
 #showcase {
   position: relative;
