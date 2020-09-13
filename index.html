@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image" href="img/logoCristal.png" />
     <script src="https://kit.fontawesome.com/dfaca06771.js" crossorigin="anonymous"></script>
+    <!--
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Поленок</title>
@@ -67,9 +69,9 @@
     </nav>
 
 
+
     <!-- SLIDER WITH CAPTIONS -->
-    <section id="slider">
-        <!-- <div class="container"> -->
+    <section class="d-flex justify-content-center" id="slider">
         <div id="slider4" class="carousel slider mb-5" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li class="active" data-target="#slider4" data-slide-to="0"></li>
@@ -79,67 +81,46 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block img-fluid" src="img/Mirror_1.jpg" alt="First Slide">
-                    <!-- .d-none .d-md-block => show on screen lager then md -->
-                    <div class="carousel-caption  d-md-block">
-                        <p> Мы изготавливаем и устанавливаем зеркала больших форматов , зеркальное панно с
+
+                    <div class="carousel-caption d-md-block">
+                        <p class="in-left"> Мы изготавливаем и устанавливаем
+                            зеркала больших форматов , зеркальное панно с
                             индивидуальными размерами, зеркальные потолки </p>
-                        <button class="btn btn-primary  btn-outline-light">Зеркала</button>
+                        <button class="in-right btn btn-primary ">Зеркала</button>
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img class="d-block img-fluid" src="img/Railings_1.jpg" alt="Second Slide">
                     <div class="carousel-caption d-md-block">
-                        <p>Стеклянные ограждения и перегородки по индивидуальным размерам только с
+                        <p class="in-left">Стеклянные ограждения и перегородки по индивидуальным размерам только с
                             качественной
                             фурнитурой.
                         </p>
-                        <button class="btn btn-primary btn-outline-light">Стеклянные ограждения</button>
+                        <button class="in-right btn btn-primary btn-outline-light">Стеклянные ограждения</button>
                     </div>
                 </div>
                 <div class="carousel-item ">
                     <img class="d-block img-fluid" src="img/Skinaly_1.1.jpg" alt="Third Slide">
                     <div class="carousel-caption  d-md-block">
-                        <p>Скина́ли — задняя стенка. Панели задней стенки кухонной мебели -стеклянный
+                        <p class="in-left">Скина́ли — задняя стенка. Панели задней стенки кухонной мебели -стеклянный
                             кухонный
                             фартук уникальный, прочный, долговечный, легкий в уходе.
                         </p>
-                        <button class="btn btn-primary  btn-outline-light">Скина́ли</button>
+                        <button class="in-right btn btn-primary  btn-outline-light">Скина́ли</button>
                     </div>
                 </div>
             </div>
-            <!-- CONTROLS -->
             <a href="#slider4" class="carousel-control-prev bg-dark" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </a>
-
             <a href="#slider4" class="carousel-control-next bg-dark" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </a>
-            <!-- </div> -->
         </div>
     </section>
 
-    <!-- SHOWCASE -->
-    <!-- <section id="showcase" class="py-5">
-        <div class="primary-overlay text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <h1 class="display-3 mt-5 pt-5">Мебель твоей мечты...</h1>
-                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, quidem?</p>
-                        <a href="#" class="btn btn-outline-light btn-lg ">
-                            <i class="fas fa-arrow-right"></i> Подробнее...
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/61%2BM-GlHFkL._AC_SL1000_.jpg" alt=""
-                            class="img-fluid d-none d-lg-block">
-                    </div>
-                </div>
-            </div>
-        </div>
-        </text-white>
-    </section> -->
+
+
 
     <!-- BOXES -->
     <section id="boxes" class="py-5">
@@ -177,8 +158,7 @@
                     <div class="card text-center border-primary mb-resp">
                         <div class="card-body">
                             <h3 class="text-primary">Душевые </h3>
-                            <img src="https://lh3.googleusercontent.com/proxy/TM4WqXya7TIiUt4wFT-0_-1fOhFh-Q-_HZzrVM6MuCs7x1vSg3rENj5HJ9gZVyG2LXZFoVH65HWQgzTz-os-IqK3SRHZRXLPPDhYmabZMpJDnVMf3wK8oFXiCWM_L0T_1-m9pPLW56KWtsfo5bSRwgKAEbM"
-                                alt="" class="img-fluid">
+                            <img src="img/Skinaly_1.1.jpg" alt="" class="img-fluid">
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
                                 placeat.</p>
                             <a href="#" class="btn btn-outline-primary btn-lg ">
@@ -318,9 +298,7 @@
                                     consectetur ex. Harum id asperiores quaerat eos illo tempore obcaecati debitis?
                                     <div class="row">
                                         <div class="card col-lg-3 col-md-6 ">
-                                            <img class=" card-img-top"
-                                                src="https://lh3.googleusercontent.com/proxy/3camCWbO1DzAJmDnwnu2svzUjVFce5uAxpCr8_jsWpDgPFfQDSfpnwLhlIiyCdtN7T2xecxEq5nq2z6RzomyshHJVl1UCwkAm_e5l_7d4YM05A"
-                                                alt="Card image cap">
+                                            <img class=" card-img-top" src="img/Skinaly_1.jpg" alt="Card image cap">
                                             <div class="card-body">
                                                 <p class="card-text">Some quick example text to build on the card
                                                     title
@@ -338,9 +316,7 @@
                                             </div>
                                         </div>
                                         <div class="card col-lg-3 col-md-6 ">
-                                            <img class=" card-img-top"
-                                                src="https://lh3.googleusercontent.com/proxy/3camCWbO1DzAJmDnwnu2svzUjVFce5uAxpCr8_jsWpDgPFfQDSfpnwLhlIiyCdtN7T2xecxEq5nq2z6RzomyshHJVl1UCwkAm_e5l_7d4YM05A"
-                                                alt="Card image cap">
+                                            <img class=" card-img-top" src="img/Skinaly_1.jpg" alt="Card image cap">
                                             <div class="card-body">
                                                 <p class="card-text">Some quick example text to build on the card
                                                     title
@@ -358,9 +334,7 @@
                                             </div>
                                         </div>
                                         <div class="card col-lg-3 col-md-6 ">
-                                            <img class=" card-img-top"
-                                                src="https://lh3.googleusercontent.com/proxy/3camCWbO1DzAJmDnwnu2svzUjVFce5uAxpCr8_jsWpDgPFfQDSfpnwLhlIiyCdtN7T2xecxEq5nq2z6RzomyshHJVl1UCwkAm_e5l_7d4YM05A"
-                                                alt="Card image cap">
+                                            <img class=" card-img-top" src="img/Skinaly_1.jpg" alt="Card image cap">
                                             <div class="card-body">
                                                 <p class="card-text">Some quick example text to build on the card
                                                     title
@@ -378,9 +352,7 @@
                                             </div>
                                         </div>
                                         <div class="card col-lg-3 col-md-6 ">
-                                            <img class=" card-img-top"
-                                                src="https://lh3.googleusercontent.com/proxy/3camCWbO1DzAJmDnwnu2svzUjVFce5uAxpCr8_jsWpDgPFfQDSfpnwLhlIiyCdtN7T2xecxEq5nq2z6RzomyshHJVl1UCwkAm_e5l_7d4YM05A"
-                                                alt="Card image cap">
+                                            <img class=" card-img-top" src="img/Skinaly_1.jpg" alt="Card image cap">
                                             <div class="card-body">
                                                 <p class="card-text">Some quick example text to build on the card
                                                     title
@@ -398,9 +370,7 @@
                                             </div>
                                         </div>
                                         <div class="card col-lg-3 col-md-6 ">
-                                            <img class=" card-img-top"
-                                                src="https://lh3.googleusercontent.com/proxy/3camCWbO1DzAJmDnwnu2svzUjVFce5uAxpCr8_jsWpDgPFfQDSfpnwLhlIiyCdtN7T2xecxEq5nq2z6RzomyshHJVl1UCwkAm_e5l_7d4YM05A"
-                                                alt="Card image cap">
+                                            <img class=" card-img-top" src="img/Skinaly_1.jpg" alt="Card image cap">
                                             <div class="card-body">
                                                 <p class="card-text">Some quick example text to build on the card
                                                     title
@@ -418,9 +388,7 @@
                                             </div>
                                         </div>
                                         <div class="card col-lg-3 col-md-6 ">
-                                            <img class=" card-img-top"
-                                                src="https://lh3.googleusercontent.com/proxy/3camCWbO1DzAJmDnwnu2svzUjVFce5uAxpCr8_jsWpDgPFfQDSfpnwLhlIiyCdtN7T2xecxEq5nq2z6RzomyshHJVl1UCwkAm_e5l_7d4YM05A"
-                                                alt="Card image cap">
+                                            <img class=" card-img-top" src="img/Skinaly_1.jpg" alt="Card image cap">
                                             <div class="card-body">
                                                 <p class="card-text">Some quick example text to build on the card
                                                     title
@@ -463,9 +431,7 @@
                                         debitis?
                                         <div class="row">
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class="card-img-top" src="img/Skinaly_1.1.jpg" alt="cap">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -474,9 +440,7 @@
                                                 </div>
                                             </div>
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class=" card-img-top" src="img/Skinaly_1.jpg">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -485,9 +449,7 @@
                                                 </div>
                                             </div>
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class=" card-img-top" src="img/Skinaly_1.jpg">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -496,9 +458,7 @@
                                                 </div>
                                             </div>
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class=" card-img-top" src="img/Skinaly_1.jpg">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -507,9 +467,7 @@
                                                 </div>
                                             </div>
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class=" card-img-top" src="img/Skinaly_1.jpg">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -518,9 +476,7 @@
                                                 </div>
                                             </div>
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class=" card-img-top" src="img/Skinaly_1.jpg">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -529,9 +485,7 @@
                                                 </div>
                                             </div>
                                             <div class="card col-lg-3 col-md-6 ">
-                                                <img class=" card-img-top"
-                                                    src="https://lh3.googleusercontent.com/proxy/oj2QA5BtcBqZz7NvVgaYMyD0iPkzpv85-UI2rsnqAmqgOSBLC20ehzye8ApJuS5zLSLuWIELcNR5E7VoYQ"
-                                                    alt="Card image cap">
+                                                <img class=" card-img-top" src="img/Skinaly_1.jpg">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the
                                                         card
@@ -912,6 +866,8 @@
                 });
             }
         });
+
+        //Mobile touch for Slider
     </script>
 </body>
 
