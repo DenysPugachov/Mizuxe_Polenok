@@ -8,21 +8,21 @@
     <script src="https://kit.fontawesome.com/dfaca06771.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>ЧП Поленок</title>
+    <title>Поленок</title>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav">
 
     <!-- NAVIGATION -->
-    <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top ">
         <div class="container">
 
-
-            <a href="#home" class="navbar-brand p-0 row">
-                <img src="img/logo.png" alt="logo" width="50" height="50 ">
-                <h3 class="d-inline align-middle">ЧП Поленок </h3>
-            </a>
-            <i class="fas fa-phone text-nowrap navbar-brand pl-5"> 067 939 76 49</i>
+            <div id="logo" class="d-flex text-nowrap align-items-center mr-3">
+                <img class="pr-1" src="img/logo.png" alt="logo" height="50 ">
+                <h2 class=" ">Поленок</h2>
+                <i class="fas fa-phone  text-nowrap text-success ml-3"> </i>
+                <h4 class="m-0">067 939 76 49</h4>
+            </div>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -32,19 +32,24 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Зеркала</a>
+                        <a href="#home" class="nav-link" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Зеркала</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Скинали</a>
+                        <a href="#about" class="nav-link" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Скинали</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#auth" class="nav-link text-nowrap">Душевые</a>
+                        <a href="#auth" class="nav-link text-nowrap" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Душевые</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#aut" class="nav-link text-nowrap"> Шкафы купе</a>
+                        <a href="#aut" class="nav-link text-nowrap" data-toggle="collapse"
+                            data-target=".navbar-collapse.show"> Шкафы купе</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#conct" class="nav-link">Контакты</a>
+                        <a href="#conct" class="nav-link" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Контакты</a>
                     </li>
                 </ul>
             </div>
