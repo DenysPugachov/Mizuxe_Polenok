@@ -28,8 +28,14 @@ body {
 
     .nav-item {
         font-size: 1.2rem;
-        // padding-right: 1rem;
+        padding-right: 1rem;
+
+        .nav-link:hover {
+            color: $primary;
+            text-shadow: 1px 0px 0px $primary;
+        }
     }
+
 }
 
 
@@ -139,31 +145,32 @@ body {
                 top: 18px;
             }
 
-            i, .tel {
+            i,
+            .tel {
                 font-size: 0.95rem;
             }
         }
 
     }
-}
 
-.navbar-toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    opacity: 0.9;
-}
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        opacity: 0.9;
+    }
 
-#navbarCollapse {
-    background: #fff;
-    font-size: 1.2rem;
-    // border-radius: 0 0 0.5rem;
-    padding: 1rem;
+    #navbarCollapse {
+        background: #fff;
+        font-size: 1.2rem;
+        border-radius: 0 0 0.5rem;
+        padding: 1rem;
 
-    a:hover {
-        color: $primary;
-        font-weight: bold;
+        a:hover {
+            color: $primary;
+            font-weight: bold;
+        }
     }
 }
 

@@ -16,7 +16,11 @@ body {
     font-size: 1.2rem;
     line-height: normal; }
   .navbar .nav-item {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    padding-right: 1rem; }
+    .navbar .nav-item .nav-link:hover {
+      color: #3292a6;
+      text-shadow: 1px 0px 0px #3292a6; }
 
 #showcase {
   position: relative;
@@ -77,19 +81,22 @@ body {
       margin-left: 5px; }
     .navbar #logo .city {
       top: 18px; }
-    .navbar #logo i, .navbar #logo .tel {
-      font-size: 0.95rem; } }
-.navbar-toggler {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  opacity: 0.9; }
+    .navbar #logo i,
+    .navbar #logo .tel {
+      font-size: 0.95rem; }
 
-#navbarCollapse {
-  background: #fff;
-  font-size: 1.2rem;
-  padding: 1rem; }
-  #navbarCollapse a:hover {
-    color: #3292a6;
-    font-weight: bold; }
+  .navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    opacity: 0.9; }
+
+  #navbarCollapse {
+    background: #fff;
+    font-size: 1.2rem;
+    border-radius: 0 0 0.5rem;
+    padding: 1rem; }
+    #navbarCollapse a:hover {
+      color: #3292a6;
+      font-weight: bold; } }
