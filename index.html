@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image" href="img/logoCristal.png" />
     <script src="https://kit.fontawesome.com/dfaca06771.js" crossorigin="anonymous"></script>
-    <!--
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Поленок</title>
@@ -86,7 +84,7 @@
                         <p class="in-left"> Мы изготавливаем и устанавливаем
                             зеркала больших форматов , зеркальное панно с
                             индивидуальными размерами, зеркальные потолки </p>
-                        <button class="in-right btn btn-primary ">Зеркала</button>
+                        <a href="#mirror" class="in-right btn btn-primary ">Зеркала</a>
                     </div>
                 </div>
                 <div class="carousel-item ">
@@ -96,7 +94,7 @@
                             качественной
                             фурнитурой.
                         </p>
-                        <button class="in-right btn btn-primary btn-outline-light">Стеклянные ограждения</button>
+                        <a href="#shower" class="in-right btn btn-primary btn-outline-light">Стеклянные ограждения</a>
                     </div>
                 </div>
                 <div class="carousel-item ">
@@ -106,7 +104,16 @@
                             кухонный
                             фартук уникальный, прочный, долговечный, легкий в уходе.
                         </p>
-                        <button class="in-right btn btn-primary  btn-outline-light">Скина́ли</button>
+                        <a href="#skinali" class="in-right btn btn-primary  btn-outline-light">Скина́ли</a>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="d-block img-fluid slide" src="img/Shkafkype_1.jpg" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <p class="in-left">Шкафы-купе под заказ по индивидуальным размерам с различными вариантами
+                            декорирования и комплектации.
+                        </p>
+                        <a href="#wardrobe" class="in-right btn btn-primary  btn-outline-light">Шкаф-купе</a>
                     </div>
                 </div>
             </div>
@@ -209,15 +216,15 @@
 
             <!-- ACCORDION -->
             <div id="accordion">
-                <div id="mirror" class="card">
+                <div class="card">
                     <div class="card-header  bg-primary text-white">
                         <h5 class="md-0 ">
-                            <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                            <div href="#mirror" data-toggle="collapse" data-parent="#accordion">
                                 <i class="fas fa-arrow-circle-down"></i> Зеркала
                             </div>
                         </h5>
                     </div>
-                    <div id="collapse1" class="collapse">
+                    <div id="mirror" class="collapse">
                         <div class="card-body"> Изготовление и прирезка зеркал и зеркальных конструкций любого вида и
                             сложности, самые сложные дизайнерские решения. Мы изготавливаем и устанавливаем зеркала
                             больших форматов , зеркальное
@@ -276,15 +283,15 @@
                     </div>
                 </div>
 
-                <div id="skinali" class="card">
+                <div class="card">
                     <div class="card-header">
                         <h5 class="md-0">
-                            <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                            <div href="#skinali" data-toggle="collapse" data-parent="#accordion">
                                 <i class="fas fa-arrow-circle-down"></i> Скинали
                             </div>
                         </h5>
                     </div>
-                    <div id="collapse2" class="collapse">
+                    <div id="skinali" class="collapse">
                         <div class="card-body">Скина́ли — задняя стенка. Панели задней стенки кухонной мебели
                             -стеклянный кухонный фартук уникальный, прочный, долговечный, легкий в уходе.
                             Мы используем закалённое стекло – устойчивое к царапинам, ударам, высоким
@@ -384,15 +391,15 @@
                     </div>
 
 
-                    <div id="shower" class="card">
+                    <div class="card">
                         <div class="card-header bg-primary text-white">
                             <h5 class="md-0">
-                                <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                                <div href="#shower" data-toggle="collapse" data-parent="#accordion">
                                     <i class="fas fa-arrow-circle-down"></i> Душевые
                                 </div>
                             </h5>
                         </div>
-                        <div id="collapse3" class="collapse ">
+                        <div id="shower" class="collapse ">
                             <div class="card-body">Душевые кабины по
                                 индивидуальным размерам только с качественной фурнитурой. Они отличаются такими
                                 свойствами, как долговечность, влагостойкость, безопасность. Кроме того, выглядят очень
@@ -467,15 +474,15 @@
                         </div>
                     </div>
 
-                    <div id="wardrobe" class="card">
+                    <div class="card">
                         <div class="card-header">
                             <h5 class="md-0">
-                                <div href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+                                <div href="#wardrobe" data-toggle="collapse" data-parent="#accordion">
                                     <i class="fas fa-arrow-circle-down"></i> Шкафы купе
                                 </div>
                             </h5>
                         </div>
-                        <div id="collapse4" class="collapse ">
+                        <div id="wardrobe" class="collapse ">
                             <div class="card-body">Изготовление шкафа-купе под заказ по индивидуальным размерам с
                                 различными вариантами декорирования и комплектации
                                 <div class="row">
@@ -588,7 +595,8 @@
                         <h3 class="text-primary text-nowrap pb-3">
                             Наши сотрудники
                         </h3>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.</p>
+                        <p class="lead">Наши сотрудники всегда в курсе последних веяний дизайнерской моды и могут помочь
+                            Вам в выборе.</p>
                     </div>
                 </div>
             </div>
@@ -824,6 +832,24 @@
                     window.location.hash = hash;
                 });
             }
+        });
+
+        //open accordion
+        document.querySelectorAll("a[href='#mirror']").forEach(item => {
+            item.addEventListener("click", mirror.classList.add(
+                "show"))
+        });
+        document.querySelectorAll("a[href='#skinali']").forEach(item => {
+            item.addEventListener("click", skinali.classList.add(
+                "show"))
+        });
+        document.querySelectorAll("a[href='#shower']").forEach(item => {
+            item.addEventListener("click", shower.classList.add(
+                "show"))
+        });
+        document.querySelectorAll("a[href='#wardrobe']").forEach(item => {
+            item.addEventListener("click", wardrobe.classList.add(
+                "show"))
         });
 
         //Mobile touch for Slider
