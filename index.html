@@ -745,7 +745,7 @@
                                     <i class="fas fa-user"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Имя">
+                            <input class="questionNameTelegram" type="text" class="form-control" placeholder="Имя">
                         </div>
 
                         <div class="input-group input-group-lg mb-3">
@@ -754,7 +754,8 @@
                                     <i class="fas fa-phone"></i>
                                 </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Телефон или Почта">
+                            <input class="questionPhoneTelegram" type="text" class="form-control"
+                                placeholder="Телефон или Почта">
                         </div>
 
                         <div class="input-group input-group-lg mb-3">
@@ -763,8 +764,10 @@
                                     <i class="fas fa-pencil-alt"></i>
                                 </span>
                             </div>
-                            <textarea class="form-control" placeholder="Ваш вопрос..." rows="5"></textarea>
-                            <input type="submit" value="Отправить" class="btn btn-primary btn-block btn-lg mt-3">
+                            <textarea class="questionTextTelegram" class="form-control" placeholder="Ваш вопрос..."
+                                rows="5"></textarea>
+                            <input type="submit" value="Отправить"
+                                class="btn btn-primary btn-block btn-lg mt-3 sendToTelegram">
                         </div>
 
                     </form>
@@ -863,6 +866,27 @@
         document.querySelectorAll("a[href='#wardrobe']").forEach(item => {
             item.addEventListener("click", wardrobe.classList.add(
                 "show"))
+        });
+
+        //Telegram
+        const sendToTelegramBtn = document.querySelector(".sendToTelegram");
+
+        const chatid = "642358579";
+        const token = "1279763695:AAEtuG4ogdGQseuR-ge17AAki6id_TSp-pQ";
+
+
+        //Отправляем текст в наш телеграмм канал
+        sendToTelegramBtn.addEventListener("click", () => {
+            const questionNameTelegram = document.querySelector(".questionNameTelegram").value;
+            const questionPhoneTelegram = document.querySelector(".questionPhoneTelegram").value;
+            const questionTextTelegram = document.querySelector(".questionTextTelegram").value;
+            const text =
+                `<b>${questionNameTelegram}</b> \n <i>${questionPhoneTelegram}</i> \n ${questionTextTelegram}`;
+            const z = $.ajax({
+                type: "POST",
+                url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
+                data: "parse_mode=HTML&text=" + encodeURIComponent(text),
+            });
         });
 
         //Mobile touch for Slider
