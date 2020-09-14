@@ -59,7 +59,10 @@ body {
     height: 30px;
     margin-left: 5px; }
   #logo h2 {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+
+  .fop .city {
+    top: 22px; } }
 @media (max-width: 850px) {
   .navbar .nav-item {
     font-size: 1rem; } }
@@ -101,7 +104,18 @@ body {
     padding: 1rem; }
     #navbarCollapse a:hover {
       color: #3292a6;
-      font-weight: bold; } }
+      font-weight: bold; }
+
+  .container {
+    padding: 0;
+    margin: 0;
+    max-width: 768px; }
+
+  .card-body {
+    padding: 0; }
+
+  #boxes .btn {
+    display: block; } }
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -269,4 +283,4 @@ body {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-duration: 1s;
-  animation-delay: 1s; }
+  animation-delay: 0.5s; }
