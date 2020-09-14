@@ -17,7 +17,8 @@
     <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top ">
         <div class="container">
 
-            <div id="logo" class="d-flex text-nowrap align-items-center mr-3">
+            <div id="logo" class="d-flex text-nowrap align-items-center mr-3" data-toggle="modal"
+                data-target="#contactModal">
                 <img class="pr-1" src="img/logoCristal.png" alt="logo" height="50 ">
                 <div class="fop">
                     <h2>Поленок</h2>
@@ -56,7 +57,7 @@
                             data-target=".navbar-collapse.show">Шкафы купе</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">О
+                        <a href="#about" class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show"> О
                             нас</a>
                     </li>
                 </ul>
@@ -67,8 +68,8 @@
 
 
     <!-- SLIDER WITH CAPTIONS -->
-    <section id="slider" class="container">
-        <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+    <section class="container">
+        <div id="slider4" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li class="active" data-target="#slider4" data-slide-to="0"></li>
                 <li class="" data-target="#slider4" data-slide-to="1"></li>
@@ -242,6 +243,10 @@
                             сложности, самые сложные дизайнерские решения. Мы изготавливаем и устанавливаем зеркала
                             больших форматов , зеркальное
                             панно с индивидуальными размерами, зеркальные потолки.
+
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Задать
+                                вопрос</button>
+
                             <div class="row">
                                 <div class="card col-lg-3 col-md-6 ">
                                     <img class=" card-img-top"
@@ -730,6 +735,64 @@
         </div>
     </section>
 
+    <!-- CONTACT MODAL -->
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Задать вопрос</h4>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control questionNameTelegram_Mod" placeholder="Имя">
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control questionPhoneTelegram_Mod"
+                                placeholder="Телефон или Почта">
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend ">
+                                <span class="input-group-text">
+                                    <i class="fas fa-pencil-alt "></i>
+                                </span>
+                            </div>
+                            <textarea class="form-control questionTextTelegram_Mod" placeholder="Ваш вопрос..."
+                                rows="5"></textarea>
+                            <input type="submit" value="Отправить"
+                                class="btn btn-primary btn-block btn-lg mt-3 sendToTelegram_Mod">
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-around">
+                        <span class="p-3">
+                            <a href="http://facebook.com">
+                                <i class="fab fa-facebook fa-3x"></i>
+                            </a>
+                        </span>
+                        <span class="p-3">
+                            <a href="http://instagram.com">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- CONTACT -->
     <section id="contact" class="bg-light py-5">
         <div class="container">
@@ -773,13 +836,13 @@
 
             <div class="d-flex justify-content-around">
                 <span class="p-3">
-                    <a href="htttp://facebook.com">
+                    <a href="http://facebook.com">
                         <i class="fab fa-facebook fa-4x"></i>
                     </a>
                 </span>
 
                 <span class="p-3">
-                    <a href="htttp://instagram.com">
+                    <a href="http://instagram.com">
                         <i class="fab fa-instagram fa-4x"></i>
                     </a>
                 </span>
@@ -787,6 +850,8 @@
 
         </div>
     </section>
+
+
 
     <!-- FOOTER -->
     <section id="main-footer" class="pb-2 bg-primary text-white">
@@ -798,10 +863,10 @@
                     <span class="city">Каменское</span>
                 </div>
                 <div>
-                    <i class="d-block fas fa-phone text-nowrap text-success ml-3">
+                    <i class="d-block fas fa-phone text-nowrap  ml-3">
                         <span class="tel text-white m-0">093 879 90 72</span>
                     </i>
-                    <i class="d-block fas fa-phone text-nowrap text-success ml-3">
+                    <i class="d-block fas fa-phone text-nowrap  ml-3">
                         <span class="tel text-white m-0">067 939 76 49</span>
                     </i>
 
@@ -867,6 +932,7 @@
 
         //Telegram
         const sendToTelegramBtn = document.querySelector(".sendToTelegram");
+        const sendToTelegramBtn_Mod = document.querySelector(".sendToTelegram_Mod");
 
         // const chatid = "642358579";
         const chatid = "@muzuxe";
@@ -882,10 +948,27 @@
                 `<b>${questionNameTelegram}</b> \n <i>${questionPhoneTelegram}</i> \n ${questionTextTelegram}`;
             const z = $.ajax({
                 type: "POST",
-                url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" + chatid,
+                url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" +
+                    chatid,
                 data: "parse_mode=HTML&text=" + encodeURIComponent(text),
             });
         });
+
+        //form _modal form
+        sendToTelegramBtn_Mod.addEventListener("click", () => {
+            const questionNameTelegram = document.querySelector(".questionNameTelegram_Mod").value;
+            const questionPhoneTelegram = document.querySelector(".questionPhoneTelegram_Mod").value;
+            const questionTextTelegram = document.querySelector(".questionTextTelegram_Mod").value;
+            const text =
+                `<b>${questionNameTelegram}</b> \n <i>${questionPhoneTelegram}</i> \n ${questionTextTelegram}`;
+            const z = $.ajax({
+                type: "POST",
+                url: "https://api.telegram.org/bot" + token + "/sendMessage?chat_id=" +
+                    chatid,
+                data: "parse_mode=HTML&text=" + encodeURIComponent(text),
+            });
+        });
+
 
         //Mobile touch for Slider
     </script>
